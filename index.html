@@ -3,15 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ChipIQ - AI-powered chip verification tools that help semiconductor engineers analyze waveforms, debug designs, and accelerate time to tape-out.">
-    <meta name="keywords" content="chip verification, AI verification, waveform analysis, semiconductor, ASIC, FPGA, VCD analysis">
+    <meta name="description" content="ChipIQ - Coming Soon">
     <meta name="author" content="ChipIQ">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="ChipIQ - AI-Powered Chip Verification">
-    <meta property="og:description" content="Work Smarter, Not Harder. Accelerate chip verification with AI-driven waveform analysis.">
-    <meta property="og:image" content="assets/images/logo/ChipIQ_logo.svg">
     
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
@@ -20,419 +13,48 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     
-    <title>ChipIQ - AI-Powered Chip Verification</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>ChipIQ - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+        
+        .hero-container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        p {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 300;
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#hero" class="logo">
-                    <img src="assets/images/logo/ChipIQ_logo.svg" alt="ChipIQ Logo" height="40">
-                    <span class="logo-tagline">AI-Powered Verification Solutions</span>
-                </a>
-                <button class="nav-toggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#solutions">Solutions</a></li>
-                    <li><a href="#product">Product</a></li>
-                    <li><a href="#getting-started">Get Started</a></li>
-                    <li><a href="#documentation">Docs</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact" class="btn-primary">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Work Smarter,<br>Not Harder</h1>
-                <p class="hero-subtitle">Automate your design verification process</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn-hero">Book a Demo</a>
-                    <a href="#product" class="btn-secondary">Learn More</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="chip-animation"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>About ChipIQ</h2>
-                <p class="lead">Empowering semiconductor engineers with AI-driven verification solutions</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="icon">⚡</div>
-                    <h3>What We Do</h3>
-                    <p>From specification to tape-out, we automate the verification process so you can focus on innovation, not mundane verification, debug and testbench creation.</p>
-                </div>
-                <div class="about-card">
-                    <div class="icon">🔍</div>
-                    <h3>How We Help</h3>
-                    <p>ChipIQ analyzes your waveforms, specs, and code using natural language—and creates verification tests and testbenches. We help you understand, verify and fix your designs faster.</p>
-                </div>
-                <div class="about-card">
-                    <div class="icon">🔒</div>
-                    <h3>Security First</h3>
-                    <p>Fully on-premise deployment with your own chosen LLM. Your IP stays 100% private, on your assigned servers - no data is shared with ChipIQ.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solutions Section -->
-    <section id="solutions" class="section section-dark">
-        <div class="container">
-            <div class="section-header">
-                <h2>Solutions</h2>
-                <p class="lead">Comprehensive verification assistance across your entire design flow</p>
-            </div>
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <h3>🎯 Waveform Analysis</h3>
-                    <p>Ask questions about VCD files in natural language. Find signals, analyze timing, debug faster.</p>
-                </div>
-                <div class="solution-card">
-                    <h3>📋 Specification Review</h3>
-                    <p>Automated analysis of design specs to identify gaps and inconsistencies early.</p>
-                </div>
-                <div class="solution-card">
-                    <h3>🧪 Testbench Generation</h3>
-                    <p>AI-generated testbenches with high code coverage, reducing manual effort.</p>
-                </div>
-                <div class="solution-card">
-                    <h3>🐛 Root Cause Analysis</h3>
-                    <p>Quickly identify failure sources by analyzing logs, waveforms, and code together.</p>
-                </div>
-                <div class="solution-card">
-                    <h3>📊 Coverage Enhancement</h3>
-                    <p>Identify coverage gaps and get AI-suggested test scenarios to close them.</p>
-                </div>
-                <div class="solution-card">
-                    <h3>🔄 Continuous Monitoring</h3>
-                    <p>Monitor your design repo in real-time with proactive suggestions and issue detection.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Section -->
-    <section id="product" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>ChipIQ-MCP</h2>
-                <p class="lead">AI-powered simulation waveform analysis through your favorite coding assistant</p>
-            </div>
-            
-            <div class="product-intro">
-                <p>ChipIQ-MCP integrates powerful VCD analysis directly into AI assistants like GitHub Copilot and Claude Desktop. Ask questions about your simulation results in plain English—no complex tools, no scripts.</p>
-            </div>
-
-            <div class="product-features">
-                <div class="feature-row">
-                    <div class="feature-content">
-                        <h3>Natural Language Interface</h3>
-                        <p>Simply ask: "Show me all clock signals in the CPU" or "What changed between time 1000 and 2000?" Your AI assistant handles the rest.</p>
-                        <ul>
-                            <li>No waveform viewer learning curve</li>
-                            <li>Stay in your IDE—no context switching</li>
-                            <li>Pattern-based signal discovery</li>
-                        </ul>
-                    </div>
-                    <div class="feature-visual">
-                        <div class="code-example">
-                            <div class="code-header">Ask Your AI Assistant</div>
-                            <pre><code>"Show me all AXI signals in the memory 
-controller, excluding debug signals"</code></pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="feature-row reverse">
-                    <div class="feature-content">
-                        <h3>Comprehensive Analysis</h3>
-                        <p>Get detailed reports on module hierarchies, signal lists, value changes, and timing—all formatted for immediate use.</p>
-                        <ul>
-                            <li>Module hierarchy visualization</li>
-                            <li>Signal discovery and properties</li>
-                            <li>Time-based value change tracking</li>
-                            <li>Flexible filtering and time windows</li>
-                        </ul>
-                    </div>
-                    <div class="feature-visual">
-                        <div class="metrics-grid">
-                            <div class="metric">
-                                <div class="metric-value">10-100x</div>
-                                <div class="metric-label">Faster Debug</div>
-                            </div>
-                            <div class="metric">
-                                <div class="metric-value">Zero</div>
-                                <div class="metric-label">Learning Curve</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="feature-row">
-                    <div class="feature-content">
-                        <h3>Built for Teams</h3>
-                        <p>Works with Verilog, SystemVerilog, and VHDL. Supports local files, network paths, and HTTP URLs. New engineers productive from day one.</p>
-                        <ul>
-                            <li>Universal VCD format support</li>
-                            <li>Local and remote file access</li>
-                            <li>Copy-paste reports for collaboration</li>
-                            <li>No training required</li>
-                        </ul>
-                    </div>
-                    <div class="feature-visual">
-                        <div class="supported-tools">
-                            <div class="tool-badge">GitHub Copilot</div>
-                            <div class="tool-badge">Claude Desktop</div>
-                            <div class="tool-badge">MCP Compatible</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="use-cases">
-                <h3>Real-World Use Cases</h3>
-                <div class="use-case-grid">
-                    <div class="use-case">
-                        <h4>Debug Protocol Violations</h4>
-                        <p>"Show me all AXI write signals during the first 50 transactions"—instantly identify where the protocol breaks.</p>
-                    </div>
-                    <div class="use-case">
-                        <h4>Clock Domain Analysis</h4>
-                        <p>List all clocks, then track data signals across domains in the critical failure window.</p>
-                    </div>
-                    <div class="use-case">
-                        <h4>State Machine Debug</h4>
-                        <p>Group state signals by name to see complete transition history and find unexpected states.</p>
-                    </div>
-                    <div class="use-case">
-                        <h4>Coverage Gap Analysis</h4>
-                        <p>Quickly identify which signals toggled in passing vs. failing tests.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Getting Started Section -->
-    <section id="getting-started" class="section section-dark">
-        <div class="container">
-            <div class="section-header">
-                <h2>Getting Started</h2>
-                <p class="lead">Up and running in minutes</p>
-            </div>
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Install</h3>
-                    <pre><code>uvx chipiq-mcp>=0.0.9</code></pre>
-                    <p>Requires Python 3.13+</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Configure</h3>
-                    <p>Add ChipIQ-MCP to your AI assistant's MCP configuration file</p>
-                    <pre><code>{
-  "servers": {
-    "chipiq-mcp-server": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": ["chipiq-mcp>=0.0.9"]
-    }
-  }
-}</code></pre>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Ask Away</h3>
-                    <p>Start asking questions about your VCD files through your AI assistant</p>
-                    <p class="step-example">"Show me the module hierarchy in test.vcd"</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Documentation Section -->
-    <section id="documentation" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Documentation</h2>
-                <p class="lead">Everything you need to know</p>
-            </div>
-            <div class="docs-grid">
-                <a href="docs/quickstart.html" class="doc-card">
-                    <h3>🚀 Quick Start Guide</h3>
-                    <p>Get up and running in 5 minutes</p>
-                </a>
-                <a href="docs/user-guide.html" class="doc-card">
-                    <h3>📖 User Guide</h3>
-                    <p>Complete feature documentation</p>
-                </a>
-                <a href="docs/faq.html" class="doc-card">
-                    <h3>❓ FAQ</h3>
-                    <p>Frequently asked questions</p>
-                </a>
-                <a href="docs/api-reference.html" class="doc-card">
-                    <h3>⚙️ API Reference</h3>
-                    <p>Technical specifications</p>
-                </a>
-                <a href="docs/examples.html" class="doc-card">
-                    <h3>💡 Examples</h3>
-                    <p>Real-world usage scenarios</p>
-                </a>
-                <a href="docs/troubleshooting.html" class="doc-card">
-                    <h3>🔧 Troubleshooting</h3>
-                    <p>Common issues and solutions</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="section section-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Latest from Our Blog</h2>
-                <p class="lead">Insights, updates, and best practices</p>
-            </div>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-date">Jan 20, 2026</div>
-                    <h3>Introducing ChipIQ-MCP: AI-Powered Waveform Analysis</h3>
-                    <p>Learn how ChipIQ-MCP transforms chip verification by bringing AI-driven waveform analysis directly into your coding environment.</p>
-                    <a href="pages/blog/introducing-chipiq-mcp.html" class="read-more">Read More →</a>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-date">Jan 15, 2026</div>
-                    <h3>5 Ways to Accelerate Debug with Natural Language Queries</h3>
-                    <p>Discover practical techniques for using ChipIQ-MCP to cut your debug time and streamline verification workflows.</p>
-                    <a href="pages/blog/accelerate-debug.html" class="read-more">Read More →</a>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-date">Jan 10, 2026</div>
-                    <h3>The Future of Chip Verification: AI as Your Co-Pilot</h3>
-                    <p>Exploring how AI assistants are transforming the semiconductor industry and what it means for verification engineers.</p>
-                    <a href="pages/blog/future-of-verification.html" class="read-more">Read More →</a>
-                </article>
-            </div>
-            <div class="blog-cta">
-                <a href="pages/blog/index.html" class="btn-secondary">View All Posts</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get in Touch</h2>
-                <p class="lead">Ready to accelerate your verification workflow?</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Let's Talk</h3>
-                    <p>Whether you're ready for a demo or just have questions, we'd love to hear from you.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <strong>Email:</strong>
-                            <a href="mailto:info@chipiq.com">info@chipiq.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Follow Us:</strong>
-                            <div class="social-links">
-                                <a href="https://linkedin.com/company/chipiq" aria-label="LinkedIn">LinkedIn</a>
-                                <a href="https://twitter.com/chipiq" aria-label="Twitter">Twitter</a>
-                                <a href="https://github.com/chipiq" aria-label="GitHub">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" name="company">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <img src="assets/images/logo/ChipIQ_logo_dark.svg" alt="ChipIQ" height="32" class="footer-logo">
-                    <p>AI-powered chip verification for the modern semiconductor industry.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#solutions">Solutions</a></li>
-                        <li><a href="#product">ChipIQ-MCP</a></li>
-                        <li><a href="#getting-started">Getting Started</a></li>
-                        <li><a href="docs/pricing.html">Pricing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#documentation">Documentation</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="docs/faq.html">FAQ</a></li>
-                        <li><a href="docs/support.html">Support</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="pages/careers.html">Careers</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="pages/privacy.html">Privacy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 ChipIQ. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" aria-label="Scroll to top">↑</button>
-
-    <script src="assets/js/main.js"></script>
+    <div class="hero-container">
+        <h1>ChipIQ<br>Work Smarter, Not Harder</h1>
+        <p>Work in progress, please check back soon</p>
+    </div>
 </body>
 </html>
